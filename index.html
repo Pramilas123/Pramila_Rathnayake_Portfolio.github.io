@@ -3,56 +3,122 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Pramila Rathnayake Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pramila Rathnayake | Portfolio</title>
 
 <style>
 
-body{
-    font-family: Arial, sans-serif;
+/* ===== Global Style ===== */
+
+*{
     margin:0;
-    background:#f4f7fb;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Header Banner */
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:#f4f7fb;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    color:#333;
+}
+
+/* ===== Header ===== */
 
 header{
-    background:#0a3d62;
+    background:linear-gradient(135deg,#0a3d62,#1e5f8a);
     color:white;
     text-align:center;
-    padding:60px 20px;
+    padding:70px 20px 60px 20px;
 }
 
 header img{
-    width:220px;
-    height:220px;
+    width:200px;
+    height:200px;
     border-radius:50%;
     object-fit:cover;
-    border:4px solid white;
+    border:5px solid white;
+    margin-bottom:20px;
 }
 
-/* Sections */
+header h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* ===== Main Content ===== */
+
+main{
+    flex:1;
+    padding:20px;
+}
+
+/* ===== Sections ===== */
 
 section{
-    max-width:900px;
+    max-width:950px;
     margin:30px auto;
     background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+section:hover{
+    transform:translateY(-5px);
 }
 
 h2{
     color:#0a3d62;
+    margin-bottom:15px;
+    border-left:5px solid #0a3d62;
+    padding-left:10px;
 }
 
-/* Footer */
+section p{
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* ===== Contact Style ===== */
+
+.contact-info{
+    font-weight:500;
+}
+
+/* ===== Footer ===== */
 
 footer{
     text-align:center;
     padding:20px;
     background:#0a3d62;
     color:white;
-    margin-top:40px;
+    font-size:14px;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width:600px){
+    header img{
+        width:150px;
+        height:150px;
+    }
+
+    header h1{
+        font-size:22px;
+    }
+
+    section{
+        padding:25px;
+    }
 }
 
 </style>
@@ -61,36 +127,49 @@ footer{
 <body>
 
 <header>
-<img src="MyProfile.jpg">
-<h1>Pramila Rathnayake</h1>
-<p>Electronics | Embedded Systems | IoT | Communication</p>
+    <img src="MyProfile.jpg" alt="Profile Photo">
+    <h1>Pramila Rathnayake</h1>
+    <p>Electronics | Embedded Systems | IoT | Communication</p>
 </header>
 
+<main>
+
 <section>
-<h2>About Me</h2>
-<p>
-Electronics Engineer with a strong research-oriented academic foundation in Mechatronics Engineering, focusing on biomedical microelectronics, artificial intelligence, and intelligent embedded system design. 
-Interested in developing next generation smart technologies through real-time signal processing, advanced sensor integration, and hardware–software design for industrial and healthcare innovation.
-</p>
+    <h2>About Me</h2>
+    <p>
+    Electronics Engineer with a strong research-oriented academic foundation in Mechatronics Engineering, 
+    focusing on biomedical microelectronics, artificial intelligence, and intelligent embedded system design. 
+    Passionate about developing next-generation smart technologies through real-time signal processing, 
+    advanced sensor integration, and hardware–software co-design for industrial and healthcare innovation.
+    </p>
 </section>
 
 <section>
-<h2>Projects</h2>
-<p>Add your project details here later.</p>
+    <h2>Projects</h2>
+    <p>
+    Detailed descriptions of embedded systems, IoT solutions, signal processing applications, and 
+    AI-integrated hardware projects will be added here.
+    </p>
 </section>
 
 <section>
-<h2>Publications</h2>
-<p>Add your publications here.</p>
+    <h2>Publications</h2>
+    <p>
+    Research publications, conference papers, and academic contributions will be listed here.
+    </p>
 </section>
 
 <section>
-<h2>Contact</h2>
-<p>Email: pramilarathnayaka123@gmail.com</p>
+    <h2>Contact</h2>
+    <p class="contact-info">
+        Email: pramilarathnayaka123@gmail.com
+    </p>
 </section>
+
+</main>
 
 <footer>
-© 2026 Pramila Rathnayake | Portfolio
+    © 2026 Pramila Rathnayake | Portfolio
 </footer>
 
 </body>
