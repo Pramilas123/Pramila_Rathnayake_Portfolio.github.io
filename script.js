@@ -1,5 +1,3 @@
-<script>
-
 window.addEventListener("scroll", function() {
 
     const reveals = document.querySelectorAll(".reveal");
@@ -8,12 +6,10 @@ window.addEventListener("scroll", function() {
 
         const windowHeight = window.innerHeight;
         const elementTop = reveals[i].getBoundingClientRect().top;
-        const elementVisible = 100;
+        const elementVisible = 120;
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
         }
     }
 });
-
-</script>
