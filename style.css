@@ -1,142 +1,151 @@
+/* ===== Global Reset ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+
+header {
+    background: linear-gradient(135deg, #0a3d62, #1e5f8a);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ===== Main Content ===== */
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* ===== Sections ===== */
+
+section {
+    max-width: 950px;
+    margin: 30px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+h2 {
+    color: #0a3d62;
+    margin-bottom: 15px;
+    border-left: 5px solid #0a3d62;
+    padding-left: 10px;
+}
+
+section p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
 /* ===== Scroll Reveal Animation ===== */
 
-.reveal{
-    opacity:0;
-    transform:translateY(30px);
-    transition:all 0.8s ease;
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
 }
 
-.reveal.active{
-    opacity:1;
-    transform:translateY(0);
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Hover interaction */
-
-section{
-    transition:0.3s ease;
-}
-
-section:hover{
-    transform:translateY(-6px);
-    box-shadow:0 8px 25px rgba(0,0,0,0.12);
-}
 /* ===== Contact Buttons ===== */
 
-.contact-buttons{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:20px;
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.contact-btn{
-    text-decoration:none;
-    background:#111;
-    color:white;
-    padding:12px 25px;
-    border-radius:40px;
-    font-weight:500;
-    transition:0.3s ease;
-    border:1px solid #333;
-}
-/* ================= HERO ================= */
-
-.hero{
-    position:relative;
-    height:100vh;
-    overflow:hidden;
-    color:white;
+.contact-btn {
+    text-decoration: none;
+    background: #111;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 40px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border: 1px solid #333;
 }
 
-/* Slider base */
-
-.slider{
-    position:absolute;
-    width:100%;
-    height:100%;
+.contact-btn:hover {
+    background: #0a3d62;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-.slide{
-    position:absolute;
-    width:100%;
-    height:100%;
-    opacity:0;
-    transition:opacity 1.5s ease-in-out;
+/* ===== Footer ===== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a3d62;
+    color: white;
+    font-size: 14px;
 }
 
-.slide.active{
-    opacity:1;
-}
+/* ===== Responsive ===== */
 
-/* ================= PORTRAIT SLIDE ================= */
+@media (max-width: 600px) {
 
-.slide-portrait{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#111;
-}
+    header img {
+        width: 150px;
+        height: 150px;
+    }
 
-.slide-portrait img{
-    max-height:75vh;
-    max-width:90%;
-    object-fit:contain;
-    position:relative;
-    z-index:2;
-}
+    header h1 {
+        font-size: 22px;
+    }
 
-/* Maroon gradient corners */
+    section {
+        padding: 25px;
+    }
 
-.corner-gradient{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:
-        radial-gradient(circle at top left, rgba(128,0,0,0.6), transparent 40%),
-        radial-gradient(circle at bottom right, rgba(128,0,0,0.6), transparent 40%);
-    z-index:1;
-}
-
-/* ================= LANDSCAPE SLIDE ================= */
-
-.slide-landscape{
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
-
-/* ================= HERO TEXT ================= */
-
-.hero-content{
-    position:relative;
-    z-index:3;
-    text-align:center;
-    top:50%;
-    transform:translateY(-50%);
-}
-
-.hero-content h1{
-    font-size:48px;
-    margin-bottom:15px;
-}
-
-.hero-content p{
-    font-size:20px;
-}
-
-/* ================= CORNER LOGO ================= */
-
-.corner-logo{
-    position:absolute;
-    top:20px;
-    right:30px;
-    width:80px;
-    z-index:4;
-}
-
-.contact-btn:hover{
-    background:#0a3d62;
-    transform:translateY(-3px);
-    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    .contact-buttons {
+        flex-direction: column;
+    }
 }
