@@ -266,5 +266,15 @@ padding:40px 5%;
   text-decoration: underline;
   color: #111;
 }
+/* Sticky footer fix for Certifications page */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* makes body fill the screen */
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
 
 
