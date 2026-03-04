@@ -132,29 +132,7 @@ border-left:5px solid #0a3d62;
 padding-left:10px;
 }
 
-/* Contact Buttons */
 
-.contact-buttons{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-margin-top:20px;
-}
-
-.contact-btn{
-text-decoration:none;
-background:#111;
-color:white;
-padding:12px 25px;
-border-radius:40px;
-transition:0.3s ease;
-border:1px solid #333;
-}
-
-.contact-btn:hover{
-background:#0a3d62;
-transform:translateY(-3px);
-}
 
 /* Footer */
 
@@ -362,4 +340,59 @@ body.cert-page main {
   box-shadow: 0 5px 15px rgba(252, 182, 159, 0.4); /* soft glowing orange */
   color: #333; /* keep text readable */
 }
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* base gradient */
+  background-size: 200% 200%; /* allow animation movement */
+  animation: gradientShift 8s ease-in-out infinite; /* smooth shifting */
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(252, 182, 159, 0.6); /* glowing orange */
+  color: #333;
+  text-align: center;
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Contact Section Heading */
+.contact-section h2 {
+  color: #b83265; /* deep accent */
+  margin-bottom: 20px;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-btn {
+  text-decoration: none;
+  background: #111;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 40px;
+  transition: 0.3s ease;
+  border: 1px solid #333;
+}
+
+.contact-btn:hover {
+  background: #0a3d62;
+  transform: translateY(-3px);
+}
+
 
