@@ -233,9 +233,10 @@ padding:40px 5%;
   text-decoration: underline;
   color: #111;
 }
+
 /* Certifications Section */
 .certifications-section {
-  background: linear-gradient(135deg, #ffe6f0, #ffd9e6); /* soft light pink gradient */
+  background: linear-gradient(135deg, #ffe6f0, #ffd9e6); /* soft pink gradient */
   border-left: 5px solid #b83265; /* deep pink accent */
   padding: 35px;
   border-radius: 16px;
@@ -247,10 +248,23 @@ padding:40px 5%;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #b83265; /* heading text matches border accent */
+  color: #b83265;
 }
 
 .cert-icon {
   font-size: 24px;
 }
+
+.cert-link {
+  color: #b83265;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+  color: #111;
+}
+
 
