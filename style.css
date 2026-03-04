@@ -355,3 +355,11 @@ body.cert-page main {
   font-size: 14px;
   line-height: 1.5;
 }
+.contact-section {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* light orange gradient */
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(252, 182, 159, 0.4); /* soft glowing orange */
+  color: #333; /* keep text readable */
+}
+
