@@ -276,5 +276,16 @@ body {
 main {
   flex: 1; /* pushes footer down */
 }
+/* Sticky footer fix only for Certifications page */
+body.cert-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.cert-page main {
+  flex: 1;
+}
+
 
 
