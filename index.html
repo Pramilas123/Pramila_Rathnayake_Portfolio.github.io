@@ -126,12 +126,30 @@ footer{
 
 <body>
 
-<header>
-    <img src="MyProfile.jpg" alt="Profile Photo">
-    <h1>Pramila Rathnayake</h1>
-    <link rel="stylesheet" href="style.css">
-    <p>Electronics | Embedded Systems | IoT | Communication</p>
-   
+<header class="hero">
+
+    <div class="slider">
+
+        <!-- Slide 1: Portrait with gradient corners -->
+        <div class="slide slide-portrait active">
+            <img src="slide1.jpg" alt="Pramila">
+            <div class="corner-gradient"></div>
+        </div>
+
+        <!-- Slide 2: Full background landscape -->
+        <div class="slide slide-landscape"
+             style="background-image: url('slide2.jpg');">
+        </div>
+
+    </div>
+
+    <div class="hero-content">
+        <h1>Pramila Rathnayake</h1>
+        <p>Electronics | Embedded Systems | IoT | Communication</p>
+    </div>
+
+    <img src="banner.png" class="corner-logo">
+
 </header>
 
 <main>
