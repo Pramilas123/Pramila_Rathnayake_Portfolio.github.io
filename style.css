@@ -32,7 +32,7 @@ min-height:100vh;
 /* Projects Section */
 .projects-section {
   background: linear-gradient(135deg, #e6ffe6, #d9ffd9); /* soft light green gradient */
-  border-left: 5px solid #1e6091; /* blue accent */
+  border-left: 5px solid #1e6091; /* blue accent (keeps consistency with tech theme) */
   padding: 35px;
   border-radius: 16px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
@@ -45,6 +45,7 @@ min-height:100vh;
   gap: 10px;
   color: #1e6091;
 }
+
 
 /* ===== HEADER HERO SECTION ===== */
 
