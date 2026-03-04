@@ -2,180 +2,46 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pramila Rathnayake | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pramila Rathnayake | Portfolio</title>
 
-<style>
-
-/* ===== Global Style ===== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background:#f4f7fb;
-    display:flex;
-    flex-direction:column;
-    min-height:100vh;
-    color:#333;
-}
-
-/* ===== Header ===== */
-
-header{
-    background:linear-gradient(135deg,#0a3d62,#1e5f8a);
-    color:white;
-    text-align:center;
-    padding:70px 20px 60px 20px;
-}
-
-header img{
-    width:200px;
-    height:200px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid white;
-    margin-bottom:20px;
-}
-
-header h1{
-    font-size:28px;
-    margin-bottom:10px;
-}
-
-header p{
-    font-size:16px;
-    opacity:0.9;
-}
-
-/* ===== Main Content ===== */
-
-main{
-    flex:1;
-    padding:20px;
-}
-
-/* ===== Sections ===== */
-
-section{
-    max-width:950px;
-    margin:30px auto;
-    background:white;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    transition:0.3s ease;
-}
-
-section:hover{
-    transform:translateY(-5px);
-}
-
-h2{
-    color:#0a3d62;
-    margin-bottom:15px;
-    border-left:5px solid #0a3d62;
-    padding-left:10px;
-}
-
-section p{
-    line-height:1.6;
-    font-size:15px;
-}
-
-/* ===== Contact Style ===== */
-
-.contact-info{
-    font-weight:500;
-}
-
-/* ===== Footer ===== */
-
-footer{
-    text-align:center;
-    padding:20px;
-    background:#0a3d62;
-    color:white;
-    font-size:14px;
-}
-
-/* ===== Responsive ===== */
-
-@media (max-width:600px){
-    header img{
-        width:150px;
-        height:150px;
-    }
-
-    header h1{
-        font-size:22px;
-    }
-
-    section{
-        padding:25px;
-    }
-}
-
-</style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="hero">
-
-    <div class="slider">
-
-        <!-- Slide 1: Portrait with gradient corners -->
-        <div class="slide slide-portrait active">
-            <img src="slide1.jpeg" alt="Pramila">
-            <div class="corner-gradient"></div>
-        </div>
-
-        <!-- Slide 2: Full background landscape -->
-        <div class="slide slide-landscape"
-             style="background-image: url('slide2.jpeg');">
-        </div>
-
-    </div>
-
-    <div class="hero-content">
-        <h1>Pramila Rathnayake</h1>
-        <p>Electronics | Embedded Systems | IoT | Communication</p>
-    </div>
-
-    <img src="banner.png" class="corner-logo">
-
+<header>
+    <img src="MyProfile.jpg" alt="Profile Photo">
+    <h1>Pramila Rathnayake</h1>
+    <p>Electronics | Embedded Systems | IoT | Communication</p>
 </header>
 
 <main>
 
-<section>
+<section class="reveal">
     <h2>About Me</h2>
     <p>
-    Electronics Engineer with a strong research-oriented academic foundation in Mechatronics Engineering, 
-    focusing on biomedical microelectronics, artificial intelligence, and intelligent embedded system design. 
-    Passionate about developing next-generation smart technologies through real-time signal processing, 
-    advanced sensor integration, and hardware–software co-design for industrial and healthcare innovation.
+        Electronics Engineer with a strong research-oriented academic foundation in Mechatronics Engineering,
+        focusing on biomedical microelectronics, artificial intelligence, and intelligent embedded system design.
+        Passionate about developing next-generation smart technologies through real-time signal processing,
+        advanced sensor integration, and hardware–software co-design.
     </p>
 </section>
 
-<section>
+<section class="reveal">
     <h2>Projects</h2>
     <p>
-    Detailed descriptions of embedded systems, IoT solutions, signal processing applications, and 
-    AI-integrated hardware projects will be added here.
+        Embedded systems, IoT solutions, AI-integrated hardware, real-time sensor systems,
+        and signal processing applications.
     </p>
 </section>
 
-<section>
+<section class="reveal">
     <h2>Publications</h2>
     <p>
-    Research publications, conference papers, and academic contributions will be listed here.
+        Research publications, conference papers, and academic contributions will be listed here.
     </p>
 </section>
 
@@ -183,19 +49,9 @@ footer{
     <h2>Contact</h2>
 
     <div class="contact-buttons">
-
-        <a href="mailto:pramilarathnayaka123@gmail.com" class="contact-btn">
-            Email
-        </a>
-
-        <a href="https://www.linkedin.com/in/pramila-rathnayake?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bgjrcgf%2BhR%2BWNdpfwFVoCCA%3D%3D" target="_blank" class="contact-btn">
-            LinkedIn
-        </a>
-
-        <a href="https://github.com/Pramilas123" target="_blank" class="contact-btn">
-            GitHub
-        </a>
-
+        <a href="mailto:pramilarathnayaka123@gmail.com" class="contact-btn">Email</a>
+        <a href="https://www.linkedin.com/in/pramila-rathnayake" target="_blank" class="contact-btn">LinkedIn</a>
+        <a href="https://github.com/Pramilas123" target="_blank" class="contact-btn">GitHub</a>
     </div>
 </section>
 
@@ -204,6 +60,9 @@ footer{
 <footer>
     © 2026 Pramila Rathnayake | Portfolio
 </footer>
+
+<!-- JavaScript -->
 <script src="script.js"></script>
+
 </body>
 </html>
