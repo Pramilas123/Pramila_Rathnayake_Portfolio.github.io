@@ -1,4 +1,7 @@
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+function revealOnScroll() {
 
     const reveals = document.querySelectorAll(".reveal");
 
@@ -12,18 +15,4 @@ window.addEventListener("scroll", function() {
             reveals[i].classList.add("active");
         }
     }
-});
-
-let slides = document.querySelectorAll(".slide");
-let currentSlide = 0;
-
-function nextSlide() {
-
-    slides[currentSlide].classList.remove("active");
-
-    currentSlide = (currentSlide + 1) % slides.length;
-
-    slides[currentSlide].classList.add("active");
 }
-
-setInterval(nextSlide, 4000);
