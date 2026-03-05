@@ -347,3 +347,16 @@ body.home-page {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+.proj-link {
+  color: #2d6a4f; /* deep green accent */
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.proj-link:hover {
+  text-decoration: underline;
+  color: #111;
+}
+
