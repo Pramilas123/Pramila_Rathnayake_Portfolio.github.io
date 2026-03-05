@@ -333,21 +333,14 @@ body.cert-page main {
   font-size: 14px;
   line-height: 1.5;
 }
-.contact-section {
-  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* light orange gradient */
-  padding: 35px;
-  border-radius: 16px;
-  box-shadow: 0 5px 15px rgba(252, 182, 159, 0.4); /* soft glowing orange */
-  color: #333; /* keep text readable */
-}
 /* Contact Section */
 .contact-section {
-  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* base gradient */
+  background: linear-gradient(135deg, #f0f0f0, #d9d9d9); /* light gray gradient */
   background-size: 200% 200%; /* allow animation movement */
   animation: gradientShift 8s ease-in-out infinite; /* smooth shifting */
   padding: 35px;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(252, 182, 159, 0.6); /* glowing orange */
+  box-shadow: 0 0 20px rgba(180, 180, 180, 0.6); /* soft glowing gray */
   color: #333;
   text-align: center;
 }
@@ -367,7 +360,7 @@ body.cert-page main {
 
 /* Contact Section Heading */
 .contact-section h2 {
-  color: #b83265; /* deep accent */
+  color: #0a3d62; /* deep navy accent for contrast */
   margin-bottom: 20px;
 }
 
@@ -394,5 +387,3 @@ body.cert-page main {
   background: #0a3d62;
   transform: translateY(-3px);
 }
-
-
