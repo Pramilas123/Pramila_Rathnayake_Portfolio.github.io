@@ -354,7 +354,6 @@ body.home-page {
   color: #333;
 }
 
-/* Rectangle Navigation Box */
 .project-nav-box {
   background: rgba(255, 255, 255, 0.95);
   padding: 15px 30px;
@@ -362,10 +361,12 @@ body.home-page {
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   margin: 20px auto;
-  max-width: 900px;
+  width: 100%;          /* make it span full width */
+  max-width: none;      /* remove the limit */
 }
+
 
 .project-nav-link {
   text-decoration: none;
