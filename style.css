@@ -335,17 +335,15 @@ footer {
 }
 /* ===== Home Page Background ===== */
 body.home-page {
-  background: linear-gradient(135deg, #6a0dad, #b832ff); /* bright purple gradient */
+  background: linear-gradient(135deg, #f9f9f9, #e6f0ff); /* soft gray to very light blue */
   background-size: 200% 200%;
-  animation: purpleGlow 10s ease-in-out infinite; /* glowing shifting effect */
-  color: #fff; /* make text readable */
+  animation: softGlow 12s ease-in-out infinite; /* gentle shifting */
+  color: #333;
 }
 
-/* Gradient Animation */
-@keyframes purpleGlow {
+/* Gentle gradient animation */
+@keyframes softGlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
-
