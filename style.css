@@ -333,4 +333,19 @@ footer {
   .profile-photo { width: 140px; height: 140px; }
   main { padding: 40px 5%; }
 }
+/* ===== Home Page Background ===== */
+body.home-page {
+  background: linear-gradient(135deg, #6a0dad, #b832ff); /* bright purple gradient */
+  background-size: 200% 200%;
+  animation: purpleGlow 10s ease-in-out infinite; /* glowing shifting effect */
+  color: #fff; /* make text readable */
+}
+
+/* Gradient Animation */
+@keyframes purpleGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
