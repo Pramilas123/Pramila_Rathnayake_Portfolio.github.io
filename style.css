@@ -348,15 +348,46 @@ body.home-page {
   100% { background-position: 0% 50%; }
 }
 
-.proj-link {
-  color: #2d6a4f; /* deep green accent */
-  font-weight: 600;
+/* ===== Project Page ===== */
+.project-page {
+  background: #f9f9f9; /* light neutral background */
+  color: #333;
+}
+
+.project-header {
+  position: relative;
+  text-align: center;
+}
+
+.project-bg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Rectangle Navigation Box */
+.project-nav-box {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  display: flex;
+  gap: 20px;
+}
+
+.project-nav-link {
   text-decoration: none;
+  font-weight: 600;
+  color: #0a3d62;
   transition: 0.3s ease;
 }
 
-.proj-link:hover {
+.project-nav-link:hover {
+  color: #b83265;
   text-decoration: underline;
-  color: #111;
 }
-
