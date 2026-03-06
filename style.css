@@ -345,13 +345,14 @@ body.home-page {
 footer {
   text-align: center;
   padding: 25px 20px;
-  background: #0a3d62;
+  background: #0a3d62;   /* dark blue footer */
   color: white;
   font-size: 14px;
-  width: 100%;          /* ensure full width */
+  width: 100%;
   box-sizing: border-box;
 }
 
+/* Footer Buttons */
 .footer-buttons {
   display: flex;
   justify-content: center;
@@ -361,27 +362,27 @@ footer {
 
 .footer-btn {
   text-decoration: none;
-  background: #111;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  transition: 0.3s ease;
-  border: 1px solid #333;
+  color: white;          /* make text white */
+  font-weight: 600;
   display: flex;
   align-items: center;
-  font-size: 14px;
+  gap: 8px;
+  transition: 0.3s ease;
 }
 
 .footer-btn i {
-  margin-right: 8px;
-  font-size: 16px;
+  font-size: 18px;
+  color: white;          /* make icon white */
 }
 
 .footer-btn:hover {
-  background: #ffe082;   /* soft yellow hover */
-  color: #0a3d62;
-  transform: translateY(-2px);
+  color: #ffe082;        /* soft yellow hover */
 }
+
+footer p {
+  margin-top: 10px;
+}
+
 
 
 
