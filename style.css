@@ -382,16 +382,22 @@ footer {
 footer p {
   margin-top: 10px;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #0a3d62;
-  color: white;
-  text-align: center;
-  padding: 15px;
+/* Make body a flex container */
+body.project-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
 }
+
+/* Push footer to bottom */
+main {
+  flex: 1; /* takes up remaining space */
+}
+
+footer {
+  margin-top: auto; /* ensures footer stays at bottom */
+}
+
 
 
 
