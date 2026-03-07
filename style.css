@@ -341,6 +341,33 @@ body.home-page {
   border-radius: 8px;
 }
 
+/* ===== Project Item Layout ===== */
+.project-item {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.project-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.project-description {
+  flex: 1;
+  text-align: justify; /* justify text lines */
+}
+
+.project-description h2 {
+  color: #0a3d62;
+  margin-bottom: 15px;
+}
+
+
 /* ===== Footer ===== */
 footer {
   text-align: center;
