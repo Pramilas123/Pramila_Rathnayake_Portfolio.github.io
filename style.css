@@ -369,6 +369,25 @@ body.home-page {
 }
 
 
+.article-content {
+  max-width: 1000px;
+  margin: 40px auto;
+  line-height: 1.6;
+}
+
+.article-image {
+  display: block;
+  width: 100%;       /* full width but responsive */
+  max-width: 700px;  /* medium size */
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.article-video {
+  text-align: center;
+  margin: 40px 0;
+}
 
 
 /* ===== Footer ===== */
