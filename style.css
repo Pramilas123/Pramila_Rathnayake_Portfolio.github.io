@@ -340,23 +340,26 @@ body.home-page {
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* Project Item Layout: image left, text right */
 .project-item {
   display: flex;
-  flex-direction: column; /* stack children vertically */
-  gap: 20px;              /* small space between image and description */
+  flex-direction: row;   /* side-by-side layout */
+  align-items: flex-start;
+  gap: 30px;             /* space between image and text */
   margin: 40px auto;
-  max-width: 800px;       /* narrower for better readability */
+  max-width: 1200px;     /* keep content centered */
 }
 
 .project-image img {
-  width: 100%;            /* full width image */
+  width: 350px;          /* medium size image */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-  margin-bottom: 15px;    /* space between multiple images */
 }
 
 .project-description {
+  flex: 1;               /* text takes remaining space */
   text-align: justify;
 }
 
@@ -364,6 +367,7 @@ body.home-page {
   color: #0a3d62;
   margin-bottom: 15px;
 }
+
 
 
 
