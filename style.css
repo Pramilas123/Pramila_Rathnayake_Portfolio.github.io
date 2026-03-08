@@ -368,18 +368,22 @@ body.home-page {
   margin-bottom: 15px;
 }
 
-
 .article-content {
   max-width: 1000px;
   margin: 40px auto;
   line-height: 1.6;
 }
 
-.article-image {
-  display: block;
-  width: 100%;       /* full width but responsive */
-  max-width: 700px;  /* medium size */
-  margin: 20px auto;
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.image-row img {
+  width: 48%;       /* two images side by side */
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
@@ -388,6 +392,7 @@ body.home-page {
   text-align: center;
   margin: 40px 0;
 }
+
 
 
 /* ===== Footer ===== */
