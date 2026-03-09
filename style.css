@@ -341,32 +341,42 @@ body.home-page {
   border-radius: 8px;
 }
 
-/* Project Item Layout: image left, text right */
-.project-item {
+/* Row layout for image + description */
+.project-row {
   display: flex;
-  flex-direction: row;   /* side-by-side layout */
   align-items: flex-start;
-  gap: 30px;             /* space between image and text */
-  margin: 40px auto;
-  max-width: 1200px;     /* keep content centered */
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
+/* Image styling */
 .project-image img {
-  width: 350px;          /* medium size image */
+  width: 400px;   /* slightly larger than before */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
+/* Description styling */
 .project-description {
-  flex: 1;               /* text takes remaining space */
+  flex: 1;
+  font-size: 1.1rem;   /* enlarge text */
+  line-height: 1.7;
   text-align: justify;
 }
 
 .project-description h2 {
   color: #0a3d62;
   margin-bottom: 15px;
+  font-size: 1.6rem;   /* bigger heading */
 }
+
+/* Centered video */
+.project-video {
+  text-align: center;
+  margin: 40px 0;
+}
+
 
 .article-content {
   max-width: 95%;       /* use most of the page width */
