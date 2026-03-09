@@ -12,37 +12,46 @@
 
 <body class="project-page">
 
-  <!-- ===== Rectangle Navigation Box ===== -->
+  <!-- ===== Navigation ===== -->
   <div class="project-nav-box">
     <a href="project.html" class="project-nav-link">Embedded & IoT</a>
-    <a href="processing.html" class="project-nav-link">Signal processing</a>
+    <a href="processing.html" class="project-nav-link">Signal Processing</a>
     <a href="simulations.html" class="project-nav-link">Simulations</a>
     <a href="praxis.html" class="project-nav-link">Praxis</a>
     <a href="ml.html" class="project-nav-link">Machine Learning & AI</a>
     <a href="computer.html" class="project-nav-link">Computer Vision</a>
   </div>
 
-  <!-- ===== HEADER IMAGE ===== -->
+  <!-- ===== Header Image ===== -->
   <header class="project-header">
     <img src="slide3.png" alt="Projects Header Image" class="project-bg">
   </header>
 
-  <!-- ===== MAIN CONTENT ===== -->
+  <!-- ===== Main Content ===== -->
   <main>
    
+    <!-- Project 1: Tetris Game -->
     <section class="project-item">
       <div class="project-image">
         <img src="project2.png" alt="Tetris Game Development Board">
       </div>
       <div class="project-description">
-        <h2>Project 1:AVR-Based Tetris Game with UART Communication</h2>
+        <h2>Project 1: AVR-Based Tetris Game with UART Communication</h2>
         <p>
-          
-         Developed an AVR-based Tetris game system using Embedded C in Microchip AVR Studio, implemented on a custom-designed PCB and tested through Proteus simulation before hardware testing. The system handles GPIO to interface push buttons for player controls and to drive the LED matrix used to display the tetromino shapes. Timers and interrupts were implemented to control the automatic falling speed of the blocks and to detect button inputs for responsive gameplay. UART communication was used between two microcontrollers, where the main MCU sends the character 'T' to request a random number from a second MCU that acts as a random number generator for selecting tetromino pieces. The game logic allows Tetrimino blocks to descend from the top of the playing field, where the player can move pieces  or rotate them until they reach the bottom or stack on previously placed blocks. When a horizontal line is completed, it clears and the blocks above fall, displaying on the 8*8 matrix while the 7-segment display shows its score.
+          Developed an AVR-based Tetris game system using Embedded C in Microchip AVR Studio, implemented on a custom-designed PCB and tested through Proteus simulation before hardware testing. The system handles GPIO to interface push buttons for player controls and to drive the LED matrix used to display the tetromino shapes. Timers and interrupts were implemented to control the automatic falling speed of the blocks and to detect button inputs for responsive gameplay. UART communication was used between two microcontrollers, where the main MCU sends the character 'T' to request a random number from a second MCU that acts as a random number generator for selecting tetromino pieces. The game logic allows Tetrimino blocks to descend from the top of the playing field, where the player can move pieces or rotate them until they reach the bottom or stack on previously placed blocks. When a horizontal line is completed, it clears and the blocks above fall, displaying on the 8×8 matrix while the 7-segment display shows its score.
         </p>
       </div>
+
+      <!-- Embedded Video -->
+      <div class="project-video">
+        <iframe src="https://drive.google.com/file/d/1ZzKBvRTEdKPTrZipyVphbJiKoo2Tc8if/preview" 
+                width="800" height="450" allow="autoplay" allowfullscreen>
+        </iframe>
+      </div>
     </section>
-     <section class="project-item">
+
+    <!-- Project 2: Line Following Robot -->
+    <section class="project-item">
       <div class="project-image">
         <img src="project1.png" alt="Line Following Robot">
       </div>
@@ -58,6 +67,7 @@
     </section>
   </main>
 
+  <!-- ===== Footer ===== -->
   <footer>
     <div class="footer-buttons">
       <a href="mailto:pramilarathnayaka123@gmail.com" class="footer-btn">
@@ -75,3 +85,4 @@
 
 </body>
 </html>
+
