@@ -366,17 +366,20 @@ body.home-page {
 
 /* Description styling */
 .project-description {
-  max-width: 600px;          /* keep text readable */
-  font-size: 1.1rem;
-  line-height: 1.7;
+  flex: 1;                 /* let text expand to fill remaining space */
+  max-width: 100%;         /* remove the 600px cap */
+  font-size: 1.2rem;       /* slightly larger text */
+  line-height: 1.8;
   text-align: justify;
+  padding-right: 20px;     /* optional spacing from the edge */
 }
 
 .project-description h2 {
   color: #0a3d62;
-  margin-bottom: 15px;
-  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-size: 1.8rem;       /* larger heading to match wider layout */
 }
+
 
 /* Centered video */
 .project-video {
