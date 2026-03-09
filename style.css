@@ -349,12 +349,11 @@ body.home-page {
   margin-bottom: 30px;
 }
 
-/* Image styling */
-.project-image img {
-  width: 400px;   /* slightly larger than before */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 auto;            /* fixed size, doesn’t stretch */
 }
 
 /* Description styling */
