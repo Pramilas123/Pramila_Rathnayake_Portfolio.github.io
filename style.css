@@ -433,9 +433,10 @@ body.home-page {
 
 /* ===== Footer ===== */
 footer {
+  margin-top: auto;           /* pushes footer to bottom */
   text-align: center;
   padding: 25px 20px;
-  background: #0a3d62;   /* dark blue footer */
+  background: #0a3d62;        /* dark blue footer */
   color: white;
   font-size: 14px;
   width: 100%;
@@ -452,7 +453,7 @@ footer {
 
 .footer-btn {
   text-decoration: none;
-  color: white;          /* make text white */
+  color: white;               /* make text white */
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -462,54 +463,28 @@ footer {
 
 .footer-btn i {
   font-size: 18px;
-  color: white;          /* make icon white */
+  color: white;               /* make icon white */
 }
 
 .footer-btn:hover {
-  color: #ffe082;        /* soft yellow hover */
+  color: #ffe082;             /* soft yellow hover */
 }
 
 footer p {
   margin-top: 10px;
 }
-/* Make body a flex container */
+
+/* Flexbox layout for project pages */
 body.project-page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* full viewport height */
+  min-height: 100vh;          /* full viewport height */
 }
 
-/* Push footer to bottom */
 main {
-  flex: 1; /* takes up remaining space */
+  flex: 1;                    /* main grows to fill space */
 }
 
-footer {
-  margin-top: auto; /* ensures footer stays at bottom */
-}
-/* Make body a flex container */
-body.project-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* full viewport height */
-}
-
-/* Main grows to fill space */
-main {
-  flex: 1; /* takes up remaining space */
-}
-
-/* Footer styling */
-footer {
-  margin-top: auto; /* pushes footer down */
-  text-align: center;
-  padding: 25px 20px;
-  background: #0a3d62;
-  color: white;
-  font-size: 14px;
-  width: 100%;
-  box-sizing: border-box;
-}
 
 
 
