@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Learning | Pramila Rathnayake</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="project-page">
+
+  <!-- ===== Navigation ===== -->
+  <div class="project-nav-box">
+    <a href="project.html" class="project-nav-link">Embedded & IoT</a>
+    <a href="processing.html" class="project-nav-link">Signal Processing</a>
+    <a href="simulations.html" class="project-nav-link">Simulations</a>
+    <a href="praxis.html" class="project-nav-link">Praxis</a>
+    <a href="ml.html" class="project-nav-link">Machine Learning & AI</a>
+    <a href="computer.html" class="project-nav-link">Computer Vision</a>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="project-header">
+    <h1>Audio Data Pre-Processing</h1>
+  </header>
+
+  <!-- ===== Article Content ===== -->
+  <main class="article-content">
+
+    <!-- Image pairs -->
+    <div class="image-row">
+      <img src="Picture_Processing0.png" alt="Parkinson’s Project Image 1">
+      <img src="Picture_Processing0.1.png" alt="Parkinson’s Project Image 2">
+    </div>
+
+    <div class="image-row">
+      <img src="Picture_Processing1.png" alt="Parkinson’s Project Image 3">
+      <img src="Picture_processing0.2.png" alt="Parkinson’s Project Image 4">
+    </div>
+
+
+    <!-- Description -->
+    <article>
+      <p>
+       This initial visualization provides a time-domain representation of the audio signal, showing the amplitude of sound at each moment. Then, a “Butterworth band-pass filter” is applied to remove frequencies outside the relevant range. Since we are considering voice recordings, we often use a range between 300 Hz and 3400 Hz, which captures most of the human voice frequencies while discarding background hum, low-frequency vibrations, and high-frequency noise. The Butterworth filter is chosen for its smooth frequency response, which minimizes signal distortion. Clipping is a form of distortion that happens when the audio signal exceeds the maximum allowable amplitude, resulting in “flattened” peaks. After filtering, we check for clipping by identifying samples that reach the upper or lower amplitude limits (For an example., ±1.0 for normalized floating-point audio). Detecting clipping is essential as it affects sound quality, and normalization cannot correct this distortion.If clipping is detected, gain reduction is applied to bring the signal within a safer amplitude range. By reducing the gain, the signal’s overall amplitude is scaled down to avoid further clipping. This is done by applying a reduction factor, such as -6 dB, to the signal. Reducing gain helps to prevent additional distortion while preparing the audio for the next stages of processing.Applying dynamic range compression after gain reduction helps manage peaks and prevent 
+further clipping. Dynamic range compression controls the audio signal’s dynamic range, reducing the volume of the loudest parts while leaving the quieter parts relatively unchanged. This process is helpful for signals with frequent loud peaks, where an excessive volume difference between loud and quiet sections can be challenging to manage. Compression is applied with a threshold and a ratio, which softens the peaks to prevent clipping.
+Normalization is the process of scaling the audio signal so that its maximum amplitude reaches a defined target, typically 1.0 for floating-point data. This step increases the overall loudness of the signal without introducing clipping, ensuring that the audio uses the full available dynamic range. 
+      </p>
+    </article>
+
+ 
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-buttons">
+      <a href="mailto:pramilarathnayaka123@gmail.com" class="footer-btn">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://www.linkedin.com/in/pramila-rathnayake" target="_blank" class="footer-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/Pramilas123" target="_blank" class="footer-btn">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+    <p>© 2026 Pramila Rathnayake | Machine Learning</p>
+  </footer>
+
+</body>
+</html>
