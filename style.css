@@ -487,6 +487,30 @@ main {
 footer {
   margin-top: auto; /* ensures footer stays at bottom */
 }
+/* Make body a flex container */
+body.project-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+/* Main grows to fill space */
+main {
+  flex: 1; /* takes up remaining space */
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto; /* pushes footer down */
+  text-align: center;
+  padding: 25px 20px;
+  background: #0a3d62;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 
 
 
